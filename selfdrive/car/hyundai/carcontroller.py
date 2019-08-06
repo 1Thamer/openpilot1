@@ -109,7 +109,7 @@ class CarController(object):
     self.ALCA.update_status(CS.cstm_btns.get_button_status("alca") > 0)
 
     alca_angle, alca_steer, alca_enabled, turn_signal_needed = self.ALCA.update(enabled, CS, self.cnt, actuators)
-    apply_steer = int(round(alca_steer * SteerLimitParams.STEER_MAX))
+    apply_steer = int(round(actuators.steer * SteerLimitParams.STEER_MAX))
 
     # SPAS limit angle extremes for safety
     apply_steer_ang_req = np.clip(actuators.steerAngle, -1*(SteerLimitParams.STEER_ANG_MAX), SteerLimitParams.STEER_ANG_MAX)
