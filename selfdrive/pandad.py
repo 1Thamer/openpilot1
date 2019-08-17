@@ -62,9 +62,9 @@ def update_panda():
     raise AssertionError
 
   version = str(panda.get_version())
-  if not version.startswith(repo_version):
-    cloudlog.info("Version mismatch after flashing, exiting")
-    raise AssertionError
+  #if not version.startswith(repo_version):
+  #  cloudlog.info("Version mismatch after flashing, exiting")
+  #  raise AssertionError
 
 
 def main(gctx=None):
