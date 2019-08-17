@@ -1,3 +1,19 @@
+
+Version 0.6.3.7-ku7 (2019-08-17)
+========================
+  * Merge Only
+
+Version 0.6.3 (2019-08-12)
+========================
+ * Alert sounds from EON: requires NEOS update
+ * Improve driver monitoring: eye tracking and improved awareness logic
+ * Improve path prediction with new driving model
+ * Improve lane positioning with wide lanes and exits
+ * Improve lateral control on RAV4
+ * Slow down for turns using model
+ * Open sourced regression test to verify outputs against reference logs
+ * Open sourced regression test to sanity check all car models
+
 Version 0.6.2.7-ku7 (2019-08-14)
 ========================
   * Improve Auto Checksum Learner (this should fix LKAS Error Bugs)
@@ -33,7 +49,6 @@ Version 0.6.1 (2019-07-21)
  * Toyota Sienna support thanks to wocsor!
 
 Version 0.6.0.5-ku7 (2019-08-**) ---- never publically released
-========================
   * HKG - Improve Min Speed
   * HKG - Support Genesis (@xx979xx)
 
@@ -80,6 +95,7 @@ Version 0.6.0.1-ku7 (2019-07-05)
   * HKG - Removed Noisy Console/Logs
   * HKG - Remove remnants of CP UI
 
+=======
 Version 0.6 (2019-07-01)
 ========================
  * New model, with double the pixels and ten times the temporal context!

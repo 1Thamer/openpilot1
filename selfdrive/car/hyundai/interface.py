@@ -58,6 +58,7 @@ class CarInterface(object):
 
     ret.steerActuatorDelay = 0.1 
     ret.steerRateCost = 0.5
+    tire_stiffness_factor = 1.
 
     ret.lateralTuning.pid.kf = 0.00005
     ret.mass = 1985. + STD_CARGO_KG
@@ -216,7 +217,7 @@ class CarInterface(object):
 
   def apply(self, c):
 
-    hud_alert = get_hud_alerts(c.hudControl.visualAlert, c.hudControl.audibleAlert)
+    hud_alert = get_hud_alerts(c.hudControl.visualAlert)
 
     can_sends = self.CC.update(c.enabled, self.CS, c.actuators,
                                c.cruiseControl.cancel, hud_alert)
