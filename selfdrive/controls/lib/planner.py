@@ -3,7 +3,6 @@ import math
 import numpy as np
 from common.params import Params
 from common.numpy_fast import interp
-from common.kalman.simple_kalman import KF1D
 
 import selfdrive.messaging as messaging
 from cereal import car
@@ -96,9 +95,6 @@ class Planner(object):
     self.fcw_checker = FCWChecker()
     self.fcw_enabled = fcw_enabled
     self.path_x = np.arange(192)
-
-    self.model_v_kf = KF1D([[0.0],[0.0]], _MODEL_V_A, _MODEL_V_C, _MODEL_V_K)
-    self.model_v_kf_ready = False
 
     self.params = Params()
 

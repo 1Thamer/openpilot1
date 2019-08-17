@@ -123,9 +123,6 @@ def data_sample(CI, CC, sm, can_sock, cal_status, cal_perc, overtemp, free_space
   if driver_status.terminal_alert_cnt >= MAX_TERMINAL_ALERTS:
     events.append(create_event("tooDistracted", [ET.NO_ENTRY]))
 
-  if driver_status.terminal_alert_cnt >= MAX_TERMINAL_ALERTS:
-    events.append(create_event("tooDistracted", [ET.NO_ENTRY]))
-
   return CS, events, cal_status, cal_perc, overtemp, free_space, low_battery, mismatch_counter
 
 

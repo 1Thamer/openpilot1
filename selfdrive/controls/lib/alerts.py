@@ -397,13 +397,6 @@ ALERTS = [
       AlertStatus.critical, AlertSize.full,
       Priority.MID, VisualAlert.steerRequired, AudibleAlert.chimeWarningRepeat, .1, 2., 2.),
 
-  Alert(
-      "posenetInvalid",
-      "TAKE CONTROL IMMEDIATELY",
-      "Vision Failure: Check Camera View",
-      AlertStatus.critical, AlertSize.full,
-      Priority.MID, VisualAlert.steerRequired, AudibleAlert.chimeWarning2, .1, 2., 2.),
-
   # Cancellation alerts causing immediate disabling
   Alert(
       "controlsFailed",
