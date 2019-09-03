@@ -99,7 +99,7 @@ class CarController(object):
 
     # Apply Usage of Minimum Steer Speed
     if CS.low_speed_alert:
-      disable_steer = True
+      disable_steer = False
 
     ### Turning Indicators ###
     if (CS.left_blinker_on == 1 or CS.right_blinker_on == 1):
